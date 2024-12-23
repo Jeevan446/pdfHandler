@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#add{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+#add:hover {
+    background-color: #0056b3;
+}
+
+#items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0; /* Reduced gap between items */
+    padding: 10px; /* Reduced padding inside items */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    font-weight: bold; 
+    font-size: 14px;
+    width: 95%;
+    height: auto; 
+}
+
+#items span {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    margin: 0; 
+}
+
+#items div {
+    display: flex; 
+    flex-direction: column;
+}
+
+#items div > * {
+    margin-bottom: 0;
+}
+
+#items:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slight hover effect */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; /* Reduced container max width */
+    margin: 10px auto; /* Reduced vertical margin */
+}
+#items{
+font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+}
+#delete{
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 4px;
+    /* position: absolute; */
+    /* right: 0%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    margin: auto;
+    display: none;
+}
+.admin #delete{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#backBtn{
+    font-size: 19px;
+    border: none;
+    background-color: transparent;
+   color: black;
+   position: absolute;
+   left: 4px;
+   top: 4px;
+}
+
+#dd{ 
+    padding-top: 40px;
+    margin-top: 20px;
+    /* background-color: palevioletred; */
+}
+@media (max-width: 768px) {
+    #add {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #items {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #add {
+        width: 50%;
+        text-align: center;
+    }
+}

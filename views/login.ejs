@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+  <link rel="stylesheet" href="/stylesheets/user.css" />
+</head>
+
+<body>
+  <form action="/user/login" method="post">
+    <div id="demail">
+      <label for="email">Email:</label><br />
+      <input type="email" name="email" />
+      <hr><br />
+    </div>
+    <div id="dpassword">
+      <label for="password">Password: </label><br />
+      <input type="password" name="password" />
+      <hr>
+    </div>
+    <div id="dbutton">
+      <button type="submit" id="button">Login</button>
+    </div>
+    <p id="warning">Access to this website is limited to authorized users. An email address and password provided by the
+      admin are required for login.</p>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.author-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.author-item {
+  display: block;
+  text-decoration: none;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.author-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #ff416c;
+}
+
+.pdf-icon {
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: #ff4b2b;
+  transition: color 0.3s ease;
+}
+
+.author-item:hover .pdf-icon {
+  color: #ff416c;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .author-item {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .pdf-icon {
+    font-size: 40px;
+  }
+
+  .author-name {
+    font-size: 14px;
+  }
+}
+#delete{
+  width: 40px;
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 4px;
+  /* position: absolute; */
+  /* right: 0%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  margin: auto;
+  display: none;
+}
+.admin #delete{
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+}
+#backBtn{
+  font-size: 19px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+@media (max-width: 480px) {
+  .button {
+    width: 100%;
+  }
+
+  .author-item {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .pdf-icon {
+    font-size: 36px;
+  }
+}

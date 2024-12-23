@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#container {
+    border: 1px solid rgb(11, 13, 1); /* Debugging border for container */
+    background-color: white; /* Adding a background color to make the container stand out */
+    padding: 20px; /* Padding to create space inside the container */
+    border-radius: 8px; /* Optional: Rounded corners for better looks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
+    transition: box-shadow 0.3s ease; /* Smooth transition effect for hover */
+    text-align: center; /* Center content inside the container */
+}
+
+ a {
+    color: black; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+#container:hover{
+    background-color: rgb(81, 138, 211);
+    transition: all 0.3s ease-in-out;
+}

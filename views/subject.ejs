@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+    <link rel="stylesheet" href="/stylesheets/subject.css">
+</head>
+
+<body>
+   <% subjects.forEach(function(f){ %>
+    <a href="/content/<%=f.subjectname%>/decision/">
+    <div id="container">
+            <%= f.subjectname %> 
+    </div>
+</a>
+    <% })%>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>signup</title>
+  <link rel="stylesheet" href="/stylesheets/user.css" />
+</head>
+
+<body>
+  <form action="/user/signup" method="post">
+    <div id="dusername">
+      <label for="username">Username:</label><br />
+      <input type="text" name="username" id="username" />
+      <hr />
+      <br />
+    </div>
+    <div id="demail">
+      <label for="email">Email:</label><br />
+      <input type="email" name="email" id="email" />
+      <hr />
+      <br />
+    </div>
+    <div id="dpassword">
+      <label for="password">Password: </label><br />
+      <input type="password" name="password" id="password" />
+      <hr />
+    </div>
+    <div id="dradio">
+      <div>
+        <input type="radio" value="user" name="radio" class="radio" />
+        <label for="user">User</label>
+      </div>
+      <div>
+        <input type="radio" value="admin" name="radio" class="radio" />
+        <label for="admin">Admin</label>
+      </div>
+    </div>
+    <div id="dbutton">
+      <button type="submit" id="button">signup</button>
+    </div>
+  </form>
+  <script src="/javascript/signup.js"></script>
+</body>
+
+</html>

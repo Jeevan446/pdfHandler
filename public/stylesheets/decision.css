@@ -1,0 +1,40 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9FAFB; /* Light gray background */
+    color: #333; /* Standard text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    gap: 15px; /* Space between links */
+}
+
+/* Link styles */
+a {
+    color: #4F46E5; /* Professional blue text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Slightly larger text for readability */
+    font-weight: 500; /* Medium weight for clean design */
+    padding: 8px 12px; /* Add spacing around text */
+    border: 1px solid #4F46E5; /* Subtle border for definition */
+    border-radius: 5px; /* Rounded edges for softness */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: #4F46E5; /* Fill background with blue */
+    color: white; /* White text for contrast */
+}
+#backBtn{
+    font-size: 19px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}

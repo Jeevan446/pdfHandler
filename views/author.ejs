@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors PDFs</title>
+    <link rel="stylesheet" href="/stylesheets/author.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="<%= user.role === 'admin' ? 'admin' : '' %>">
+    <button id="backBtn"><i class="fa-solid fa-arrow-left" id="arrow"></i></button>
+    <div class="container" >  
+        <% if (user.role=="admin") { %>
+            <a href="createauthor" class="button">Create Author</a>
+            <% } %>
+        <div class="author-list">
+            <% if (authors.length===0) { %>
+                <p class="no-authors">No authors found.</p>
+                <% } else { %>
+                    <% authors.forEach(function(f) { %>
+                        <a href="<%= f.url %>" class="author-item" target="_blank">
+                            <div class="pdf-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <p class="author-name">
+                                <%= f.author %>
+                            </p>
+                        </a>
+                        <a href="/content/deleteauthor/<%= f._id %>" id="delete"
+                            ><i class="fa fa-trash" aria-hidden="true"></i
+                          ></a>
+                        <% }); %>
+                            <% } %>
+        </div>
+    </div>
+    <script>
+        document.getElementById("backBtn").addEventListener("click", function() {
+          window.history.back(); // Navigate to the previous page
+        });
+      </script>
+</body>
+
+</html>
